@@ -1,0 +1,11 @@
+name: @name@
+version: @version@-@apiversion@
+description: @description@
+authors: [@author@]
+website: @website@
+
+main: @mainClass@
+commands:
+  Group:
+      description: Allows the creating and setting of groups.
+      usage: /Group [create/set/add]
