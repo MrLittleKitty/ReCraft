@@ -100,9 +100,9 @@ subprojects {
         compileOnly.extendsFrom(nonPluginDependencies)
     }
     
-//    dependencies {
-//        compile group: 'com.google.inject', name: 'guice', version: '4.0'
-//    }
+    dependencies {
+        compile group: 'com.google.inject', name: 'guice', version: '4.0'
+    }
 
     task copyDependencyPlugins(type: Copy) {
         from  configurations.pluginDependencies

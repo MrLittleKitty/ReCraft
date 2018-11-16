@@ -16,6 +16,4 @@ public interface CellBlockManager {
     void freePlayer(final UUID player);
 
     void imprisonPlayer(final UUID player, final Location cellLocation);
-
-    CellItemManager getCellItemManager();
 }

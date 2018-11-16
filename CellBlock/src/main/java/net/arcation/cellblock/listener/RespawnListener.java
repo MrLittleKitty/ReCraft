@@ -6,15 +6,13 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerRespawnEvent;
 
+import javax.inject.Inject;
 import java.util.UUID;
 
 public class RespawnListener implements Listener {
 
+    @Inject
     private CellBlockManager manager;
-
-    public RespawnListener(final CellBlockManager manager) {
-        this.manager = manager;
-    }
 
     @EventHandler(priority = EventPriority.LOWEST)
     public void handleRespawn(final PlayerRespawnEvent event) {
